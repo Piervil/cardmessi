@@ -1,0 +1,67 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url('../assets/grad.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	scroll-behavior: smooth;
+	scroll-padding-top: 80px;
+}
+
+img {
+	max-width: 100%;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.card {
+	width: 230px;
+	height: 280px;
+	border: 1px solid #d2d4d6;
+	border-radius: 7px;
+	box-shadow: 1px 1px 10px #d9d9d986;
+	background-color: rgba(9, 2, 44, .65);
+	backdrop-filter: blur(9px);
+	cursor: pointer;
+	transition: 1s;
+}
+
+.card:hover {
+	transform: translateY(-7px)
+}
+
+.card__image {
+	padding: 10px;
+	border-radius: 14px;
+	transition: 1s;
+}
+
+.card__image:hover {
+	transform: translatey(-3px);
+}
+
+.card__title,
+.card__personal,
+.card__details {
+	padding: 1px 13px;
+}
+
+.card__title,
+.card__personal {
+	color: aliceblue;
+	padding-bottom: 7px;
+}
+
+.card__details {
+	font-size: 14px;
+	color: rgb(123, 124, 124)
+}
